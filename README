@@ -1,0 +1,55 @@
+-	Debian x64
+-	Difference between aptitude & apt.
+-	Take a look at cron.
+-	SELinux & AppArmor must be running at startup.
+-	2 encrypted partition using LVM.
+-	UFW / SSH on port 4242 only
+-	HOSTNAME = spetrov42
+-	USERNAME = spetrov
+-	spetrov in [user42, sudo] GROUPS
+-	Strong paswd policy 
+	[expire 30d, 2d min to change before change, warning msg 7d before expires]
+	[10 chars long, uppercase, lowercase, number, non 3 consecutive identical chars]
+	[must not include USERNAME]
+	[root passwd has to comply with this policy]
+-	SUDO following strict rules
+
+-	Configuration for SUDO GROUP
+	Limited 3 attempts
+	Custom msg if an error due to a wrong pswd
+	log file saved in /var/log/sudo/
+	TTY mode enabled
+	Restricted paths [/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin]
+
+-	monitoring.sh [all terminals every 10min]
+	architecture & kernel version
+	N processors
+	N virtual processors
+	Current & %Rate RAM
+	Current & %Rate memory/disk
+	Current CPU %Rate
+	Date & Time last reboot
+	LVM active or not
+	N active connections
+	N users using the server
+	IPv4 & MAC
+	N commands executed with sudo
+
+-	Check some of the subject's requirements
+	#head -n 2 /etc/os-release
+	/home/user# /usr/sbin/aa-status
+	/home/user# ss -tunlp
+	/home/user# /usr/bin/ufw status
+
+
+BONUS
+-	Functional WordPress
+-	Services [lighttpd, MariaDB, PHP]
+-	Web Server lighttpd (nginx and apache2 EXCLUDED)
+-	Add another services like (SFTP, POP, IMAP..)
+
+
+SUBMISSION & PEER-EVALUATION
+• Windows: certUtil -hashfile Born2beRoot.vdi sha1
+• MacOS: shasum Born2beRoot.vdi
+-	The output hash save in signature.txt
