@@ -53,3 +53,85 @@ SUBMISSION & PEER-EVALUATION
 • Windows: certUtil -hashfile Born2beRoot.vdi sha1
 • MacOS: shasum Born2beRoot.vdi
 -	The output hash save in signature.txt
+
+HISTORY
+1  apt-get install libpam-pwquality
+2  sudo apt-get install libpam-pwquality
+3  visudo /etc/pam.d/common-password
+4  vim /etc/pam.d/common-password
+5  vi /etc/pam.d/common-password
+6  nano /etc/pam.d/common-password
+7  sudo nano /etc/pam.d/common-password
+8  sudo nano /etc/login.defs
+9  sudo reboot
+10  lsblk
+11  su -
+12  sudo groupadd user42
+13  sudo groupadd evaluating
+14  getent group
+15  cut -d: -f1 /etc/passwd
+16  echo $HISTSIZE
+17  sudo adduser user01
+18  sudo usermod -aG spetrov42 spetrov
+19  sudo usermod -aG user42 spetrov
+20  sudo usermod -aG evaluating user01
+21  getent group user42
+22  getent group evaluating
+23  groups
+24  chage -l user01
+25  sudo chage -l user01
+26  cd
+27  ls -la
+28  cd ..
+29  ls -la
+30  cd ..
+31  ls -la
+32  cd
+33  cd /var/log
+34  ls -la
+35  mkdir sudo
+36  sudo mkdir sudo
+37  ls -la
+38  cd ~/../
+39  ls -la
+40  cd ~/../
+41  ls -la
+42  cd
+43  ls -la
+44  cd ..
+45  ls -la
+46  cd var/log/
+47  ls -la
+48  cd sudo
+49  touch sudo.log
+50  sudo touch sudo.log
+51  visudo /etc/sudoers
+52  sudo nano /etc/sudoers
+53  cd
+54  sudo apt-get install -y net-tools
+55  cd /usr/local/bin/
+56  touch monitoring.sh
+57  sudo touch monitoring.sh
+58  chmod 777 monitoring.sh
+59  sudo chmod 777 monitoring.sh
+60  sudo nano monitoring.sh
+61  ./monitoring.sh
+62  sudo nano monitoring.sh
+63  ./monitoring.sh
+64  exit
+65  sudo sudoers
+66  sudo visudo
+67  sudo reboot
+68  sudo /usr/local/bin/monitoring.sh
+69  crontab -u root -e
+70  sudo crontab -u root -e
+71  ./monitoring.sh shutdown now
+72  shutdown -d
+73  halt
+74  poweroff
+75  shutdown -h now
+76  sudo shutdown -h now
+77  aa-status
+78  /usr/local/bin/monitoring.sh
+79  /usr/local/bin/monitoring.sh -q
+80  history
