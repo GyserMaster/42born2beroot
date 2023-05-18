@@ -55,83 +55,391 @@ SUBMISSION & PEER-EVALUATION
 -	The output hash save in signature.txt
 
 HISTORY
-1  apt-get install libpam-pwquality
-2  sudo apt-get install libpam-pwquality
-3  visudo /etc/pam.d/common-password
-4  vim /etc/pam.d/common-password
-5  vi /etc/pam.d/common-password
-6  nano /etc/pam.d/common-password
-7  sudo nano /etc/pam.d/common-password
-8  sudo nano /etc/login.defs
-9  sudo reboot
-10  lsblk
-11  su -
-12  sudo groupadd user42
-13  sudo groupadd evaluating
-14  getent group
-15  cut -d: -f1 /etc/passwd
-16  echo $HISTSIZE
-17  sudo adduser user01
-18  sudo usermod -aG spetrov42 spetrov
-19  sudo usermod -aG user42 spetrov
-20  sudo usermod -aG evaluating user01
-21  getent group user42
-22  getent group evaluating
-23  groups
-24  chage -l user01
-25  sudo chage -l user01
-26  cd
-27  ls -la
-28  cd ..
-29  ls -la
-30  cd ..
-31  ls -la
-32  cd
-33  cd /var/log
-34  ls -la
-35  mkdir sudo
-36  sudo mkdir sudo
-37  ls -la
-38  cd ~/../
-39  ls -la
-40  cd ~/../
-41  ls -la
-42  cd
-43  ls -la
-44  cd ..
-45  ls -la
-46  cd var/log/
-47  ls -la
-48  cd sudo
-49  touch sudo.log
-50  sudo touch sudo.log
-51  visudo /etc/sudoers
-52  sudo nano /etc/sudoers
-53  cd
-54  sudo apt-get install -y net-tools
-55  cd /usr/local/bin/
-56  touch monitoring.sh
-57  sudo touch monitoring.sh
-58  chmod 777 monitoring.sh
-59  sudo chmod 777 monitoring.sh
-60  sudo nano monitoring.sh
-61  ./monitoring.sh
-62  sudo nano monitoring.sh
-63  ./monitoring.sh
-64  exit
-65  sudo sudoers
-66  sudo visudo
-67  sudo reboot
-68  sudo /usr/local/bin/monitoring.sh
-69  crontab -u root -e
-70  sudo crontab -u root -e
-71  ./monitoring.sh shutdown now
-72  shutdown -d
-73  halt
-74  poweroff
-75  shutdown -h now
-76  sudo shutdown -h now
-77  aa-status
-78  /usr/local/bin/monitoring.sh
-79  /usr/local/bin/monitoring.sh -q
-80  history
+    1  apt-get install libpam-pwquality
+    2  sudo apt-get install libpam-pwquality
+    7  sudo nano /etc/pam.d/common-password
+    8  sudo nano /etc/login.defs
+    9  sudo reboot
+   10  lsblk
+   11  su -
+   12  sudo groupadd user42
+   13  sudo groupadd evaluating
+   14  getent group
+   15  cut -d: -f1 /etc/passwd
+   16  echo $HISTSIZE
+   17  sudo adduser user01
+   18  sudo usermod -aG spetrov42 spetrov
+   19  sudo usermod -aG user42 spetrov
+   20  sudo usermod -aG evaluating user01
+   21  getent group user42
+   22  getent group evaluating
+   23  groups
+   24  chage -l user01
+   25  sudo chage -l user01
+   26  cd
+   27  ls -la
+   28  cd ..
+   29  ls -la
+   30  cd ..
+   31  ls -la
+   32  cd
+   33  cd /var/log
+   34  ls -la
+   35  mkdir sudo
+   36  sudo mkdir sudo
+   37  ls -la
+   38  cd ~/../
+   39  ls -la
+   40  cd ~/../
+   41  ls -la
+   42  cd
+   43  ls -la
+   44  cd ..
+   45  ls -la
+   46  cd var/log/
+   47  ls -la
+   48  cd sudo
+   49  touch sudo.log
+   50  sudo touch sudo.log
+   51  visudo /etc/sudoers
+   52  sudo nano /etc/sudoers
+   53  cd
+   54  sudo apt-get install -y net-tools
+   55  cd /usr/local/bin/
+   56  touch monitoring.sh
+   57  sudo touch monitoring.sh
+   58  chmod 777 monitoring.sh
+   59  sudo chmod 777 monitoring.sh
+   60  sudo nano monitoring.sh
+   61  ./monitoring.sh
+   62  sudo nano monitoring.sh
+   63  ./monitoring.sh
+   64  exit
+   65  sudo sudoers
+   66  sudo visudo
+   67  sudo reboot
+   68  sudo /usr/local/bin/monitoring.sh
+   69  crontab -u root -e
+   70  sudo crontab -u root -e
+   71  ./monitoring.sh shutdown now
+   72  shutdown -d
+   73  halt
+   74  poweroff
+   75  shutdown -h now
+   76  sudo shutdown -h now
+   77  aa-status
+   78  /usr/local/bin/monitoring.sh
+   79  /usr/local/bin/monitoring.sh -q
+   80  /usr/sbin/ufw status
+   81  sudo /usr/sbin/ufw status
+   82  history
+   83  ls
+   84  ls -la
+   85  cd ..
+   86  ls
+   87  cd ..
+   88  ls
+   89  cd
+   90  cat /usr/local/bin/monitoring.sh
+   91  sudo nano /usr/local/bin/monitoring.sh
+   92  /usr/local/bin/monitoring.sh
+   93  ss -tunlp
+   94  head -n 2 /etc/os-release
+   95  /usr/sbin/aa-status
+   96  sudo /usr/sbin/aa-status
+   97  lsblk
+   98  sudo shutdown -h now
+   99  sudo apt install lighttpd
+  100  dpkg -l | grep lighttpd
+  101  sudo ufw allow 80
+  102  sudo apt install mariadb-server
+  103  sudo mysql_secure
+  104  sudo mysql_secure_installation
+  105  sudo mariadb
+  106  mariadb -u spetrov -p
+  107  $ sudo apt install php-cgi php-mysql
+  108  sudo apt install php-cgi php-mysql
+  109  dpkg -l | grep php
+  110  sudo apt install wget
+  111  ls -la /var/www/html
+  112  sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html
+  113  ls -la /var/www/html
+  114  sudo tar -xzvf /var/www/html/latest.tar.gz
+  115  ls -la /var/www/html
+  116  ls -la /var/www/
+  117  ls -la
+  118  sudo rm /var/www/html/latest.tar.gz
+  119  sudo cp -r wordpress/* /var/www/html
+  120  ls -la /var/www/html
+  121  cd /var/www/html
+  122  mv index.lighttpd.html copy.index.lighttpd.html
+  123  sudo mv index.lighttpd.html copy.index.lighttpd.html
+  124  ls -la
+  125  cp wp-config-sample.php wp-config.php
+  126  sudo cp wp-config-sample.php wp-config.php
+  127  sudo nano wp-config.php
+  128  sudo lighty-enable-mod fastcgi; sudo lighty-enable-mod fastcgi-php; sudo service lighttpd force-reload
+  129  ping localhost
+  130  cd
+  131  sudo apt install vsftpd
+  132  dpkg -l | grep vsftpd
+  133  sudo ufw allow 21
+  134  sudo nano /etc/vsftpd.conf
+  135  pwd
+  136  sudo mkdir ftp/files
+  137  mkdir ftp
+  138  sudo mkdir ftp/files
+  139  sudo chown nobody:nogroup ftp/
+  140  sudo chmod a-w ftp/
+  141  sudo chmod a-w ftp
+  142  sudo chown nobody:nogroup ftp
+  143  user_sub_token_=$USER
+  144  local_root=/home/$USER/ftp
+  145  sudo nano /etc/vsftpd.conf
+  146  sudo nano /etc/vsftpd.userlist
+  147  echo spetrov | sudo tee -a /etc/vsftpd.userlist
+  148  sudo nano /etc/vsftpd.userlist
+  149  sudo nano /etc/vsftpd.conf
+  150  ls
+  151  cd ftp/
+  152  ls
+  153  ls files/
+  154  sudo nano files/testftp
+  155  systemctl ftp
+  156  systemctl vsftpd
+  157  sudo nano /etc/vsftpd.conf
+  158  service ftp restart
+  159  systemctl vsftpd
+  160  systemctl status vsftpd
+  161  sudo nano /etc/vsftpd.conf
+  162  sudo chmod a-w /home/<username>/ftp
+  163  sudo chmod a-w /home/spetrov/ftp
+  164  sudo chown nobody:nogroup /home/spetrov/ftp
+  165  ls
+  166  systmctl service ftp
+  167  history
+  168  systemctl ftp
+  169  systemctl status vsftpd
+  170  systemctl start vsftpd
+  171  sudo systemctl start vsftpd
+  172  systemctl start vsftpd
+  173  sudo systemctl start vsftpd
+  174  systemctl status vsftpd
+  175  systemctl start vsftpd
+  176  systemctl status vsftpd
+  177  systemctl status ssh
+  178  systemctl status https
+  179  systemctl status http
+  180  systemctl status ls
+  181  ls
+  182  ls -la
+  183  chown spetrov ftp
+  184  sudo chown spetrov ftp
+  185  ls -la
+  186  sudo chown spetrov:spetrov ftp
+  187  ls -la
+  188  ls ftp/
+  189  ls ftp/files
+  190  ls -la ftp/files
+  191  ufw status
+  192  ufw
+  193  sudo nano /etc/vsftpd.conf
+  194  systemctl start vsftpd
+  195  sudo systemctl start vsftpd
+  196  systemctl status vsftpd
+  197  sudo nano /etc/vsftpd.conf
+  198  systemctl start vsftpd
+  199  systemctl status vsftpd
+  200  systemctl start vsftpd
+  201  sudo systemctl start vsftpd
+  202  systemctl status vsftpd
+  203  systemctl restart vsftpd
+  204  sudo systemctl restart vsftpd
+  205  systemctl status vsftpd
+  206  cat /etc/vsftpd.userlist
+  207  sudo apt install vsftpd
+  208  systemctl status vsftpd
+  209  ufw
+  210  sudo ufw allow 20/tcp
+  211  sudo ufw allow 21/tcp
+  212  cat /etc/vsftpd.conf
+  213  sudo nano /etc/vsftpd.conf
+  214  sudo systemctl start vsftpd
+  215  sudo systemctl status vsftpd
+  216  sudo chmod 550 /home/spetrov/ftp
+  217  sudo chmod -R 750 /home/spetrov/ftp/files
+  218  sudo chown -R spetrov: /home/spetrov/ftp
+  219  sudo systemctl status vsftpd
+  220  sudo systemctl restart vsftpd
+  221  exit
+  222  sudo shutdown -h now
+  223  ufw status
+  224  systemctl ufw status
+  225  systemctl status ufw
+  226  sudo ufw status
+  227  systemctl ftp status
+  228  systemctl status ftp
+  229  apt-get update
+  230  sudo apt-get update
+  231  apt-get install vsftpd
+  232  sudo apt-get install vsftpd
+  233  sudo nano /etc/vsftpd.conf
+  234  systemctl restart vsftpd
+  235  sudo systemctl restart vsftpd
+  236  sudo systemctl status vsftpd
+  237  sudo systemctl restart vsftpd
+  238  sudo systemctl status vsftpd
+  239  sudo systemctl start vsftpd
+  240  sudo systemctl status vsftpd
+  241  sudo nano /etc/vsftpd.conf
+  242  sudo systemctl start vsftpd
+  243  sudo systemctl status vsftpd
+  244  sudo systemctl start vsftpd
+  245  sudo systemctl status vsftpd
+  246  apt-get remove vsftpd --purge
+  247  sudo apt-get remove vsftpd --purge
+  248  ls -la
+  249  ls ftp/
+  250  ls ftp/files/
+  251  cat ftp/files/testftp
+  252  chmod 777 ftp/
+  253  chmod 777 ftp/files/
+  254  chmod 777 ftp/files/testftp
+  255  sudo systemctl status vsftpd
+  256  sudo apt-get install vsftpd
+  257  sudo systemctl status vsftpd
+  258  sudo nano /etc/vsftpd.conf
+  259  sudo systemctl restart vsftpd
+  260  sudo systemctl status vsftpd
+  261  sudo systemctl restart vsftpd
+  262  sudo systemctl status vsftpd
+  263  sudo nano /etc/vsftpd.conf
+  264  sudo systemctl status vsftpd
+  265  sudo systemctl restart vsftpd
+  266  sudo systemctl status vsftpd
+  267  ls -la /etc/vsftpd.
+  268  ls -la /etc/vsftpd.*
+  269  cp /etc/vsftpd.conf.save  /etc/vsftpd.conf
+  270  sudo cp /etc/vsftpd.conf.save  /etc/vsftpd.conf
+  271  sudo nano /etc/vsftpd.conf
+  272  sudo apt-get remove vsftpd --purge
+  273  sudo apt-get install vsftpd
+  274  sudo systemctl status vsftpd
+  275  sudo cp /etc/vsftpd.conf  /etc/vsftpd.conf.save
+  276  sudo nano  /etc/vsftpd.conf
+  277  sudo systemctl restart vsftpd
+  278  sudo systemctl status vsftpd
+  279  sudo cp /etc/vsftpd.conf  /etc/vsftpd.conf.save
+  280  sudo nano  /etc/vsftpd.conf
+  281  sudo systemctl restart vsftpd
+  282  sudo systemctl status vsftpd
+  283  sudo nano  /etc/vsftpd.conf
+  284  sudo systemctl restart vsftpd
+  285  sudo systemctl status vsftpd
+  286  sudo ufw status numbered
+  287  sudo ufw delete 4 5 6 10 11 12
+  288  sudo ufw delete 12
+  289  sudo ufw delete 11
+  290  sudo ufw delete 10
+  291  sudo ufw delete 6
+  292  sudo ufw delete 5
+  293  sudo ufw delete 4
+  294  sudo ufw status numbered
+  295  sudo ufw delete 4
+  296  sudo ufw delete 1
+  297  sudo apt-get remove vsftpd --purge
+  298  sudo apt-get install vsftpd
+  299  sudo ufw status numbered
+  300  sudo ufw allow 20
+  301  sudo ufw allow 21
+  302  sudo systemctl status vsftpd
+  303  sudo nano  /etc/vsftpd.conf
+  304  sudo systemctl status vsftpd
+  305  sudo systemctl restart vsftpd
+  306  sudo systemctl status vsftpd
+  307  ls -la
+  308  rm -r ftp
+  309  ls -la
+  310  sudo mkdir ftp
+  311  sudo mkdir ftp/files
+  312  sudo chown nobody:nogroup /ftp
+  313  sudo chown nobody:nogroup ftp
+  314  sudo chmod a-w ftp
+  315  sudo nano  /etc/vsftpd.conf
+  316  sudo systemctl restart vsftpd
+  317  sudo systemctl status vsftpd
+  318  cat /etc/vsftpd.userlist
+  319  echo spetrov | sudo tee -a /etc/vsftpd.userlist
+  320  cat /etc/vsftpd.userlist
+  321  sudo nano /etc/vsftpd.userlist
+  322  sudo systemctl restart vsftpd
+  323  sudo systemctl status vsftpd
+  324  sudo systemctl restart vsftpd
+  325  sudo nano  /etc/vsftpd.conf
+  326  sudo systemctl restart vsftpd
+  327  sudo systemctl status vsftpd
+  328  sudo nano  /etc/vsftpd.conf
+  329  sudo systemctl restart vsftpd
+  330  sudo systemctl status vsftpd
+  331  sudo nano  /etc/vsftpd.conf
+  332  sudo systemctl restart vsftpd | sudo systemctl status vsftpd
+  333  sudo systemctl restart vsftpd && sudo systemctl status vsftpd
+  334  sudo systemctl restart vsftpd & sudo systemctl status vsftpd
+  335  sudo systemctl status vsftpd
+  336  sudo systemctl restart vsftpd
+  337  sudo systemctl status vsftpd
+  338  sudo nano  /etc/vsftpd.conf
+  339  sudo systemctl restart vsftpd
+  340  sudo systemctl status vsftpd
+  341  sudo nano  /etc/vsftpd.conf
+  342  sudo systemctl restart vsftpd
+  343  sudo systemctl status vsftpd
+  344  sudo nano  /etc/vsftpd.conf
+  345  sudo systemctl restart vsftpd & sudo systemctl status vsftpd
+  346  sudo systemctl status vsftpd
+  347  sudo systemctl restart vsftpd & sudo systemctl status vsftpd
+  348  sudo systemctl status vsftpd
+  349  sudo shutdown -h now
+  350  systemctl status vsftpd
+  351  sudo ufw status
+  352  sudo systemctl status vsftpd
+  353  sudo nano  /etc/vsftpd.conf
+  354  sudo systemctl restart vsftpd & sudo systemctl status vsftpd
+  355  sudo nano  /etc/vsftpd.conf
+  356  sudo systemctl restart vsftpd & sudo systemctl status vsftpd
+  357  ls -la
+  358  chown spetrov:spetrov ftp
+  359  sudo chown spetrov:spetrov ftp
+  360  ls -la
+  361  ls -la ftp
+  362  chown spetrov:spetrov ftp/files
+  363  sudo chown spetrov:spetrov ftp/files
+  364  ls -la ftp/files/
+  365  sudo nano ftp/files/ftp-test
+  366  sudo systemctl restart vsftpd
+  367  sudo systemctl status vsftpd
+  368  sudo nano  /etc/vsftpd.conf
+  369  ufw allow 10090:10100/tcp
+  370  sudo ufw allow 10090:10100/tcp
+  371  sudo shutdown -h now
+  372  sudo su
+  373  sudo ufw status
+  374  systemctl status svftpd
+  375  sudo systemctl status svftpd
+  376  sudo systemctl status vsftpd
+  377  sudo nano  /etc/vsftpd.conf
+  378  ls -la
+  379  ls -la ftp/files/
+  380  ls -la ftp/
+  381  sudo systemctl restart vsftpd
+  382  sudo systemctl status vsftpd
+  383  sudo shutdown -h now
+  384  ifconfig
+  385  sudo ifconfig
+  386  sudo systemctl status vsftpd
+  387  ls -la
+  388  ls -la ftp
+  389  ls -la ftp/files/
+  390  sudo nano ftp/files/ftp-test
+  391  sudo shutdown -h now
+  392  history > ftp/files/ftp-test-history.txt
