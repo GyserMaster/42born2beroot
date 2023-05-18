@@ -54,6 +54,14 @@ SUBMISSION & PEER-EVALUATION
 • MacOS: shasum Born2beRoot.vdi
 -	The output hash save in signature.txt
 
+DATA
+root paswd = !Change_me_42
+user paswd = Born_2_be_passwd
+encrypt paswd = Change_encryption_42
+
+database name = born2beroot
+database user = spetrov
+
 HISTORY
     1  apt-get install libpam-pwquality
     2  sudo apt-get install libpam-pwquality
