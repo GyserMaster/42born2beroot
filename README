@@ -41,7 +41,8 @@
 	/home/user# ss -tunlp
 	/home/user# /usr/bin/ufw status
 
-
+https://github.com/hanshazairi/42-born2beroot#3-file-transfer-protocol-ftp
+https://github.com/pasqualerossi/Born2BeRoot-Guide
 BONUS
 -	Functional WordPress
 -	Services [lighttpd, MariaDB, PHP]
@@ -61,6 +62,32 @@ encrypt paswd = Change_encryption_42
 
 database name = born2beroot
 database user = spetrov
+
+DEFENSE CHECKLIST
+cat /etc/os-release				#see version
+lsblk							#see partition
+aa-status						#check AppArmor
+dpkg -l | grep sudo
+getent group sudo
+getent group user42
+sudo visudo						#sudoers config
+dpkg -l | grep ssh
+sudo nano /etc/ssh/sshd_config
+sudo nano /etc/login.defs
+dpkg -l | grep libpam-pwquality
+sudo nano /etc/pam.d/common-password
+sudo chage -l username
+sudo crontab -u root -e
+sudo crontab -u root -l
+sudo ufw status
+sudo systemctl status ssh
+
+BONUS CHECKLIST
+dpkg -l | grep lighttpd
+dpkg -l | grep mariadb-server
+sudo mariadb -u spetrov -p
+	> SHOW DATABASES;
+dpkg -l | grep php
 
 HISTORY
     1  apt-get install libpam-pwquality
